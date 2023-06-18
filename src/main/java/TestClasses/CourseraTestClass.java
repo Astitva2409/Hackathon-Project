@@ -94,7 +94,7 @@ public class CourseraTestClass extends PageBaseClass {
         logger.log(Status.PASS, "For Buisness button clicked");
         campusPage = enterprisePage.clickElement("//a[text()='For Campus']");
         logger.log(Status.PASS, "For Campus button clicked");
-        contactUsPage = campusPage.clickElement("//a[@role='button']");
+        contactUsPage = campusPage.clickElement("a[role=button]");
         logger.log(Status.PASS, "Contact US button clicked");
         data = readExcelData(System.getProperty("user.dir") + "//src//main//resources//FormData.xlsx");
         contactUsPage.fillForm(data);

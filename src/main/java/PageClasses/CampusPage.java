@@ -13,7 +13,7 @@ public class CampusPage extends PageBaseClass {
     }
 
     public ContactUsPage clickElement(String xpath) {
-        WebElement contactBtn = driver.findElement(By.xpath(xpath));
+        WebElement contactBtn = driver.findElement(By.cssSelector(xpath));
         contactBtn.click();
         return PageFactory.initElements(driver, ContactUsPage.class);
     }
